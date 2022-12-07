@@ -34,5 +34,6 @@ function removeItem(event){
 }
 
 // TODO: Use event delegation and add an event listener to `shoppingListEl` to listen for a click event on any element with a class of `.delete-item-btn` and execute the function created above
+shoppingListEl.on('click', '.delete-item-btn', removeItem)
 
 shoppingFormEl.on('submit', handleFormSubmit);
